@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".WebviewActivity"/>
+        <activity android:name=".FillingviewActivity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
