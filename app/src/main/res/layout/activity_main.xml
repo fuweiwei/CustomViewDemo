@@ -25,4 +25,10 @@
         android:layout_marginTop="5dp"
         android:text="下拉刷新填充动画"
         android:id="@+id/but2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="水波纹动画"
+        android:id="@+id/but3"/>
 </LinearLayout>

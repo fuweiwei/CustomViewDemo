@@ -9,6 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button button1;
     private Button button2;
+    private Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +17,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         button1 = (Button) findViewById(R.id.but1);
         button2 = (Button) findViewById(R.id.but2);
+        button3 = (Button) findViewById(R.id.but3);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.but2:
                 Intent intent2 = new Intent(this,FillingviewActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.but3:
+                Intent intent3 = new Intent(this,WaveWaterActivity.class);
+                startActivity(intent3);
                 break;
             default:
                 break;
