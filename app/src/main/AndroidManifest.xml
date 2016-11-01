@@ -18,6 +18,7 @@
         <activity android:name=".WebviewActivity"/>
         <activity android:name=".FillingviewActivity"/>
         <activity android:name=".WaveWaterActivity"/>
+        <activity android:name=".WaveWater2Activity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

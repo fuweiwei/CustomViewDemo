@@ -5,8 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.veer.custom.view.PullDownFillingView;
-import com.veer.custom.view.WaveWater;
+import com.veer.custom.view.wave.WaveWater;
 
 public class WaveWaterActivity extends AppCompatActivity {
     private WaveWater waveWater;

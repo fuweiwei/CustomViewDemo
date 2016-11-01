@@ -1,4 +1,4 @@
-package com.veer.custom.view;
+package com.veer.custom.view.wave;
 
 import android.app.Activity;
 import android.content.Context;
