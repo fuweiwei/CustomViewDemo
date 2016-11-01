@@ -13,16 +13,20 @@ import android.view.View;
 
 import com.veer.custom.utils.UiUtils;
 
-import java.io.Serializable;
-
-
+/**
+ * 思路:这种水波纹可以用具体函数模拟出具体的轨迹，所以思路基本如下：
+ 1.确定水波函数方程
+ 2.根据函数方程得出每一个波纹上点的坐标；
+ 3.将水波进行平移，即将水波上的点不断的移动；
+ 4.不断的重新绘制，生成动态水波纹；
+ */
 public class DynamicWave extends View {
 
     private static  final  String TAG = "DynamicWave";
 
     // 波纹颜色
     private static final int WAVE_PAINT_COLOR = 0x880000aa;
-    // y = Asin(wx+b)+h
+    // y = Asin(wx+b)+h 这个公式里：w影响周期，A影响振幅，h影响y位置，b为初相；
     private static final float STRETCH_FACTOR_A = 20;
     private static final int OFFSET_Y = 0;
     // 第一条水波移动速度
@@ -127,9 +131,11 @@ public class DynamicWave extends View {
 
         // 将周期定为view总宽度
         mCycleFactorW = (float) (2 * Math.PI / mTotalWidth);
-
+        Log.v(TAG,"--------mCycleFactorW:"+mCycleFactorW);
         // 根据view总宽度得出所有对应的y值
         for (int i = 0; i < mTotalWidth; i++) {
+            //Math.sin(Math.PI/2)=1  Math.sin(Math.PI)=0   Math.sin(3*Math.PI/2)=-1   Math.sin(2*Math.PI)=0
+            //0 ~ 1 ~ 0 ~ -1 ~ 0
             mYPositions[i] = (float) (STRETCH_FACTOR_A * Math.sin(mCycleFactorW * i) + OFFSET_Y);
         }
     }
