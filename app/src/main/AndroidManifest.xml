@@ -8,17 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WebviewActivity"/>
-        <activity android:name=".FillingviewActivity"/>
-        <activity android:name=".WaveWaterActivity"/>
-        <activity android:name=".WaveWater2Activity"/>
+        <activity android:name=".ui.WebviewActivity"/>
+        <activity android:name=".ui.FillingviewActivity"/>
+        <activity android:name=".ui.WaveWaterActivity"/>
+        <activity android:name=".ui.WaveWater2Activity"/>
+        <activity android:name=".ui.WaveWater3Activity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

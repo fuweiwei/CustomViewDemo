@@ -1,4 +1,4 @@
-package com.veer.custom;
+package com.veer.custom.ui;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
@@ -18,6 +18,7 @@ import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
+import com.veer.custom.R;
 import com.veer.custom.view.PullDownView;
 
 public class WebviewActivity extends AppCompatActivity {

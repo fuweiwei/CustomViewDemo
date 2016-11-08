@@ -1,10 +1,11 @@
-package com.veer.custom;
+package com.veer.custom.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.veer.custom.R;
 import com.veer.custom.view.wave.WaveWater;
 
 public class WaveWaterActivity extends AppCompatActivity {

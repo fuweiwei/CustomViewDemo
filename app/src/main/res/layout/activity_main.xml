@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.veer.custom.MainActivity">
+    tools:context="com.veer.custom.ui.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,4 +42,10 @@
         android:layout_marginTop="5dp"
         android:text="水波纹动画二"
         android:id="@+id/but4"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="水波纹动画三"
+        android:id="@+id/but5"/>
 </LinearLayout>
