@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button3;
     private Button button4;
     private Button button5;
+    private Button button13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button3 = (Button) findViewById(R.id.but3);
         button4 = (Button) findViewById(R.id.but4);
         button5 = (Button) findViewById(R.id.but5);
+        button13 = (Button) findViewById(R.id.but13);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
+        button13.setOnClickListener(this);
 //        setTitle("测试");
     }
 
@@ -56,6 +59,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.but5:
                 Intent intent5 = new Intent(this,WaveWater3Activity.class);
                 startActivity(intent5);
+                break;
+            case R.id.but13:
+                Intent intent13 = new Intent(this,JellyActivity.class);
+                startActivity(intent13);
                 break;
             default:
                 break;
