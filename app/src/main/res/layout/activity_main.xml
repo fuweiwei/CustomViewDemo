@@ -29,6 +29,12 @@
         android:layout_marginTop="5dp"
         android:text="IOS下拉阻尼效果"
         android:id="@+id/but13"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="android官方下拉刷新"
+        android:id="@+id/but14"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

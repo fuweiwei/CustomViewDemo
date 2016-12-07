@@ -21,6 +21,7 @@
         <activity android:name=".ui.WaveWater2Activity"/>
         <activity android:name=".ui.WaveWater3Activity"/>
         <activity android:name=".ui.JellyActivity"/>
+        <activity android:name=".ui.SwipeRefreshActivity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
