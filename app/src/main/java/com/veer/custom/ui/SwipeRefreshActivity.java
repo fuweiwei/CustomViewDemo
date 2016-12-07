@@ -2,6 +2,7 @@ package com.veer.custom.ui;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
@@ -28,6 +29,7 @@ public class SwipeRefreshActivity extends AppCompatActivity implements SwipeRefr
         listView = (ListView) findViewById(R.id.listView);
         datas.addAll(Arrays.asList("赵云","张飞","关羽","马超","刘备","魏延"));
         swipeRefreshLayout.setOnRefreshListener(this);
+        swipeRefreshLayout.setColorSchemeColors(ContextCompat.getColor(this,R.color.colorPrimary));
         arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,datas);
         listView.setAdapter(arrayAdapter);
     }
