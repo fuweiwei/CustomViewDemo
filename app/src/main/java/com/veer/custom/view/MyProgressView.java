@@ -44,7 +44,7 @@ public class MyProgressView extends View {
         DisplayMetrics dm = new DisplayMetrics();
         mWindowManager = (WindowManager)mContext.getSystemService(Context.WINDOW_SERVICE);
         mWindowManager.getDefaultDisplay().getMetrics(dm);
-        eachProgressWidth = dm.widthPixels / (maxProgressSize * 0.3f);
+        eachProgressWidth = dm.widthPixels / (maxProgressSize * 0.1f);
         //进度条的背景颜色
         setBackgroundColor(Color.parseColor("#19000000"));
         //进度条的前景颜色,画笔
