@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button5;
     private Button button13;
     private Button button14;
+    private Button button31;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button5 = (Button) findViewById(R.id.but5);
         button13 = (Button) findViewById(R.id.but13);
         button14 = (Button) findViewById(R.id.but14);
+        button31 = (Button) findViewById(R.id.but31);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button5.setOnClickListener(this);
         button13.setOnClickListener(this);
         button14.setOnClickListener(this);
+        button31.setOnClickListener(this);
 //        setTitle("测试");
     }
 
@@ -70,6 +73,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.but14:
                 Intent intent14 = new Intent(this,SwipeRefreshActivity.class);
                 startActivity(intent14);
+                break;
+            case R.id.but31:
+                Intent intent31 = new Intent(this,SmoothProgressActivity.class);
+                startActivity(intent31);
                 break;
             default:
                 break;

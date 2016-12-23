@@ -22,6 +22,7 @@
         <activity android:name=".ui.WaveWater3Activity"/>
         <activity android:name=".ui.JellyActivity"/>
         <activity android:name=".ui.SwipeRefreshActivity"/>
+        <activity android:name=".ui.SmoothProgressActivity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
