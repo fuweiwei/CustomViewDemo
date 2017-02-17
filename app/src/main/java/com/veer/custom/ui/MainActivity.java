@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button13.setOnClickListener(this);
         button14.setOnClickListener(this);
         button31.setOnClickListener(this);
-//        setTitle("测试");
     }
 
     @Override
