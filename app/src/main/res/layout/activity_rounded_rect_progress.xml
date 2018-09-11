@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+   >
+    <com.veer.custom.view.RoundedRectProgressBar
+        android:id="@+id/view"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:backColor="#E6E6E6"
+        app:barColor="#33CC99"
+        app:textColor="#FFFFFF">
+
+    </com.veer.custom.view.RoundedRectProgressBar>
+</LinearLayout>

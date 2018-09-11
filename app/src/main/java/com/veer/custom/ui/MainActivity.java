@@ -1,9 +1,8 @@
 package com.veer.custom.ui;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -18,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button13;
     private Button button14;
     private Button button31;
+    private Button button32;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button13 = (Button) findViewById(R.id.but13);
         button14 = (Button) findViewById(R.id.but14);
         button31 = (Button) findViewById(R.id.but31);
+        button32 = (Button) findViewById(R.id.but32);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button13.setOnClickListener(this);
         button14.setOnClickListener(this);
         button31.setOnClickListener(this);
+        button32.setOnClickListener(this);
     }
 
     @Override
@@ -76,6 +78,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.but31:
                 Intent intent31 = new Intent(this,SmoothProgressActivity.class);
                 startActivity(intent31);
+            case R.id.but32:
+                Intent intent32 = new Intent(this,RoundedRectProgressActivity.class);
+                startActivity(intent32);
                 break;
             default:
                 break;
