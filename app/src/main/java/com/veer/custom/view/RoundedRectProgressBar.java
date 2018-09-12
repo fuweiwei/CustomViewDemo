@@ -14,8 +14,7 @@ import com.veer.custom.R;
 
 
 /**
- * 描述
- *
+ * 带百分比文字进度条
  * @author Veer
  * @email 276412667@qq.com
  * @date 18/9/11
