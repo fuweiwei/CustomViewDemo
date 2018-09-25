@@ -112,7 +112,6 @@ public class RoundedRectProgressBar extends View {
         float y = this.getMeasuredHeight() / 2f - mPaint.getFontMetrics().ascent / 2f - mPaint.getFontMetrics().descent / 2f;
         canvas.drawText(text, x, y, mPaint);
 
-
     }
     /***
      * 设置进度条进度, 外部调用
