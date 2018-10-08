@@ -19,9 +19,7 @@ import com.veer.custom.R;
  * @email 276412667@qq.com
  * @date 18/9/11
  */
-
 public class RoundedRectProgressBar extends View {
-
     /**
      * 画笔
      */
@@ -118,7 +116,7 @@ public class RoundedRectProgressBar extends View {
      * @date  18/9/11 下午4:34
      * @author  Veer
      * @param  progress
-    */
+     */
     public void setProgress(int progress) {
         if (progress > 100) {
             this.mProgress = 100;
