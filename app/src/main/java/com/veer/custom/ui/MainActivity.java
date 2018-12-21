@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.veer.custom.R;
+import com.veer.custom.test.TestActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button button1;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button14;
     private Button button31;
     private Button button32;
+
+    private Button buttonTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button14 = (Button) findViewById(R.id.but14);
         button31 = (Button) findViewById(R.id.but31);
         button32 = (Button) findViewById(R.id.but32);
+        buttonTest = (Button) findViewById(R.id.but_test);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
@@ -41,46 +45,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button14.setOnClickListener(this);
         button31.setOnClickListener(this);
         button32.setOnClickListener(this);
+        buttonTest.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
+        Intent intent;
         switch (id){
             case R.id.but1:
-                Intent intent = new Intent(this,WebviewActivity.class);
+                intent = new Intent(this,WebviewActivity.class);
                 startActivity(intent);
                 break;
             case R.id.but2:
-                Intent intent2 = new Intent(this,FillingviewActivity.class);
-                startActivity(intent2);
+                intent = new Intent(this,FillingviewActivity.class);
+                startActivity(intent);
                 break;
             case R.id.but3:
-                Intent intent3 = new Intent(this,WaveWaterActivity.class);
-                startActivity(intent3);
+                intent = new Intent(this,WaveWaterActivity.class);
+                startActivity(intent);
                 break;
             case R.id.but4:
-                Intent intent4 = new Intent(this,WaveWater2Activity.class);
-                startActivity(intent4);
+                intent = new Intent(this,WaveWater2Activity.class);
+                startActivity(intent);
                 break;
             case R.id.but5:
-                Intent intent5 = new Intent(this,WaveWater3Activity.class);
-                startActivity(intent5);
+                intent = new Intent(this,WaveWater3Activity.class);
+                startActivity(intent);
                 break;
             case R.id.but13:
-                Intent intent13 = new Intent(this,JellyActivity.class);
-                startActivity(intent13);
+                intent = new Intent(this,JellyActivity.class);
+                startActivity(intent);
                 break;
             case R.id.but14:
-                Intent intent14 = new Intent(this,SwipeRefreshActivity.class);
-                startActivity(intent14);
+                intent = new Intent(this,SwipeRefreshActivity.class);
+                startActivity(intent);
                 break;
             case R.id.but31:
-                Intent intent31 = new Intent(this,SmoothProgressActivity.class);
-                startActivity(intent31);
+                intent = new Intent(this,SmoothProgressActivity.class);
+                startActivity(intent);
             case R.id.but32:
-                Intent intent32 = new Intent(this,RoundedRectProgressActivity.class);
-                startActivity(intent32);
+                intent = new Intent(this,RoundedRectProgressActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.but_test:
+                intent = new Intent(this,TestActivity.class);
+                startActivity(intent);
                 break;
             default:
                 break;

@@ -81,5 +81,11 @@
         android:layout_marginTop="5dp"
         android:text="进度条百分比文字显示"
         android:id="@+id/but32"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="测试"
+        android:id="@+id/but_test"/>
     </LinearLayout>
 </ScrollView>

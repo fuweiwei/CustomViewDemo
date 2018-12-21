@@ -24,6 +24,7 @@
         <activity android:name=".ui.SwipeRefreshActivity"/>
         <activity android:name=".ui.SmoothProgressActivity"/>
         <activity android:name=".ui.RoundedRectProgressActivity"/>
+        <activity android:name=".test.TestActivity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
